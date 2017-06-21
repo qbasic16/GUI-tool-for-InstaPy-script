@@ -8,3 +8,13 @@ C:\Users\Nemanja\documents\visual studio 2015\Projects\InstaPy\InstaPy\obj\Debug
 C:\Users\Nemanja\documents\visual studio 2015\Projects\InstaPy\InstaPy\obj\Debug\InstaPy.exe
 C:\Users\Nemanja\documents\visual studio 2015\Projects\InstaPy\InstaPy\obj\Debug\InstaPy.pdb
 C:\Users\Nemanja\documents\visual studio 2015\Projects\InstaPy\InstaPy\obj\Debug\InstaPy.csprojResolveAssemblyReference.cache
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\bin\Debug\InstaPy.exe.config
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\bin\Debug\InstaPy.exe
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\bin\Debug\InstaPy.pdb
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.csprojResolveAssemblyReference.cache
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.About.resources
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.Form1.resources
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.Properties.Resources.resources
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.csproj.GenerateResource.Cache
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.exe
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.pdb

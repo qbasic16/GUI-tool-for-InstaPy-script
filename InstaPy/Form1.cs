@@ -16,6 +16,7 @@ namespace InstaPy
 		bool cant = true;
 		bool cant2 = true;
 		bool cant3 = true;
+        bool cant4 = true;
 		public Form1()
 		{
 			InitializeComponent();
@@ -523,7 +524,7 @@ namespace InstaPy
 					{
 
 						cant3 = true;	
-						string likesFromImage = "session.like_from_image(url='" + url.Text + "',amount=" + likesfromimage_nmb.Value.ToString();
+						string likesFromImage = "session.like_by_locations(['" + location_txt.Text + "',amount=" + likesfromimage_nmb.Value.ToString();
 
 						if (likefromimagephoto.Checked && likefromimagevideo.Checked || !likefromimagephoto.Checked && !likefromimagevideo.Checked)
 						{
@@ -545,14 +546,41 @@ namespace InstaPy
 						File.AppendAllText(FILENAME, likesFromImage);
 					}
 				}
-				#endregion
+                #endregion
 
-				#region RUN
-				/*========================================================================
+                #region LIKE BY LOCATION
+                /*========================================================================
+				 *			Likes from location
+				 * 
+				 * ========================================================================*/
+
+                if (likefromlocation.Checked)
+                {
+                    if (location_txt.Text.Equals(string.Empty))
+                    {
+                        MessageBox.Show("ERROR: Loaction is invalid. Paste valid Location.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        cant4 = false;
+                    }
+                    else
+                    {
+
+                        cant4 = true;
+                        string likesFromImage = "session.like_by_locations(['" + location_txt.Text + "'],amount=" + location_nmb.Value.ToString()+")";
+
+                        
+
+                        File.AppendAllText(FILENAME, likesFromImage);
+                    }
+                }
+
+                #endregion  
+
+                #region RUN
+                /*========================================================================
 				 *			Closing file and running it
 				 * 
 				 * ========================================================================*/
-				if (cant && cant2 &&cant3)
+                if (cant && cant2 &&cant3)
 				{
 					File.AppendAllText(FILENAME, Environment.NewLine + "session.end()");
 
@@ -620,11 +648,14 @@ namespace InstaPy
 				panel8.BackColor = System.Drawing.Color.LightGreen;
 			}
 			else panel8.BackColor = System.Drawing.Color.LightSalmon;
+
 			if (!likefromtags.Checked)
 			{
+               
+                    likefromimage.Checked = true;
+                
 
-				likefromimage.Checked = true;
-			}
+            }
 		}
 
 		private void likefromimage_CheckedChanged(object sender, EventArgs e)
@@ -636,8 +667,10 @@ namespace InstaPy
 			else panel11.BackColor = System.Drawing.Color.LightSalmon;
 			if (!likefromimage.Checked)
 			{
-				likefromtags.Checked = true;
-			}
+                
+                    likefromlocation.Checked = true;
+                
+            }
 		}
 
 		private void likerestrict_CheckedChanged(object sender, EventArgs e)
@@ -737,22 +770,6 @@ namespace InstaPy
 			Properties.Settings.Default.Save();
 		}
 
-		private void dontShowReadmeToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			if (Properties.Settings.Default.readmedont)
-			{
-				Properties.Settings.Default.readmedont = false;
-				dontShowReadmeToolStripMenuItem.Text = "Do show Readme";
-				Properties.Settings.Default.Save();
-			}
-			else
-			{
-				Properties.Settings.Default.readmedont = true;
-				dontShowReadmeToolStripMenuItem.Text = "Don't show Readme";
-				Properties.Settings.Default.Save();
-			}
-		}
-
 		private void downloadInstaPyFilesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			using (var client = new WebClient())
@@ -768,7 +785,7 @@ namespace InstaPy
 
 		private void downloadChromedriverToolStripMenuItem1_Click(object sender, EventArgs e)
 		{
-			System.Diagnostics.Process.Start("https://sites.google.com/a/chromium.org/chromedriver/downloads");
+			
 		}
 
 		private void exitToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -776,5 +793,69 @@ namespace InstaPy
 			this.Close();
 
 		}
-	}
+
+        private void deleteCredentialsToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Login info deleted.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Properties.Settings.Default.usernpass = "";
+            Properties.Settings.Default.Save();
+        }
+
+        private void dontShowReadmeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.readmedont)
+            {
+                Properties.Settings.Default.readmedont = false;
+                dontShowReadmeToolStripMenuItem1.Text = "Do show Readme";
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.readmedont = true;
+                dontShowReadmeToolStripMenuItem1.Text = "Don't show Readme";
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void downloadInstaPyFilesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            using (var client = new WebClient())
+            {
+                client.DownloadFile("https://github.com/timgrossmann/InstaPy/archive/master.zip", "master.zip");
+            }
+        }
+
+        private void downloadChromedriverToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            using (var client = new WebClient())
+            {
+                client.DownloadFile("https://chromedriver.storage.googleapis.com/2.29/chromedriver_win32.zip", "chromedriver_win32.zip");
+            }
+
+            
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            MessageBox.Show("When you find location on Instagram copy only this part of link. Use everything after 'locations/' or just the number" + Environment.NewLine+ "224442573/salton-sea/" + Environment.NewLine+"Without quotation marks!");
+            System.Diagnostics.Process.Start("https://www.instagram.com/explore/locations/");
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (likefromlocation.Checked)
+            {
+                panel13.BackColor = System.Drawing.Color.LightGreen;
+            }
+            else panel13.BackColor = System.Drawing.Color.LightSalmon;
+
+            if (!likefromlocation.Checked)
+            {
+                
+                
+                    likefromtags.Checked = true;
+                
+            }
+        }
+    }
 }
