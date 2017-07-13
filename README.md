@@ -26,7 +26,7 @@ You need to have [Python](https://www.python.org/downloads/) 2.7 or 3.6 installe
 
 Main screen
 
-![lol](http://i.imgur.com/oRXXyOg.png)
+![lol](https://s25.postimg.org/itdds5ikv/Capture.png)
 
 You can't run program without Username and Password and at least one Tag for liking.
 
