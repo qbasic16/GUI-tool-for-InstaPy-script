@@ -57,7 +57,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 64);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Version: 0.5\r\nBuilt with C#\r\nMIT License\r\n\r\n";
+            this.label4.Text = "Version: 0.6\r\nBuilt with C#\r\nMIT License\r\n\r\n";
             // 
             // linkLabel1
             // 

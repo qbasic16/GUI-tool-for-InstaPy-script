@@ -4,6 +4,7 @@ using System.Net;
 using System.Windows.Forms;
 using System.IO.Compression;
 using System.Threading;
+using System.Windows;
 
 namespace InstaPy
 {
@@ -17,14 +18,16 @@ namespace InstaPy
 		bool cant2 = true;
 		bool cant3 = true;
         bool cant4 = true;
-		public Form1()
+        public Form1()
 		{
 			InitializeComponent();
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-
+            
+                this.SetAutoScrollMargin(0,50);
+            
 			string path = Directory.GetCurrentDirectory() +@"\instapy";
 			
 			if (Directory.Exists(path))
