@@ -1,11 +1,11 @@
 
 # [InstaPy GUI](https://github.com/Nemixalone/GUI-tool-for-InstaPy-script/releases)
 
-[![GitHub release](https://img.shields.io/badge/Version-0.6-blue.svg?style=flat-square)](https://github.com/Nemixalone/GUI-tool-for-InstaPy-script/releases)
+[![GitHub release](https://img.shields.io/badge/Version-0.7-blue.svg?style=flat-square)](https://github.com/Nemixalone/GUI-tool-for-InstaPy-script/releases)
 ![lol](https://img.shields.io/badge/Built%20in-C%23-red.svg?style=flat-square)
 ![brt](https://img.shields.io/badge/Requirements-.NET%203.5-orange.svg?style=flat-square)
 [![Build Status](https://travis-ci.org/Nemixalone/GUI-tool-for-InstaPy-script.svg?branch=master)](https://travis-ci.org/Nemixalone/GUI-tool-for-InstaPy-script)
-![naah](https://img.shields.io/badge/up--to--date%20with%20InstaPy-YES-brightgreen.svg?style=flat-square)
+![naah](https://img.shields.io/badge/up--to--date%20with%20InstaPy-NO-brightred.svg?style=flat-square)
 ## Synopsis
 
 Simple GUI Tool for generating [InstaPy](https://github.com/timgrossmann/InstaPy) script for easier use.
