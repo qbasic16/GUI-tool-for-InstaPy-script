@@ -2,13 +2,10 @@
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
-using System.IO.Compression;
-using System.Threading;
-using System.Windows;
 
 namespace InstaPy
 {
-	public partial class Form1 : Form
+    public partial class Form1 : Form
 	{
 
 		string[] InstaPyfiles = { "__init.py", "clariafai.py", "comment_util.py", "instapy.py", "login_util.py", "like_util.py", "print_log_writer.py", "time_util.py", "unfollow_util.py" };
@@ -18,6 +15,7 @@ namespace InstaPy
 		bool cant2 = true;
 		bool cant3 = true;
         bool cant4 = true;
+        bool cant5 = true;
         public Form1()
 		{
 			InitializeComponent();
@@ -26,7 +24,7 @@ namespace InstaPy
 		private void Form1_Load(object sender, EventArgs e)
 		{
             
-                this.SetAutoScrollMargin(0,50);
+            this.SetAutoScrollMargin(0,60);
             
 			string path = Directory.GetCurrentDirectory() +@"\instapy";
 			
@@ -421,14 +419,141 @@ namespace InstaPy
 
 					File.AppendAllText(FILENAME, lower);
 				}
-				#endregion
+                #endregion
 
-				#region FOLLOW FROM LIST
-				/*========================================================================
+                #region FOLLOWERS INTERACT
+
+                if (fi_ch.Checked)
+                {
+                    string fi = "session.set_user_interact(amount=";
+                    fi += fi_amount.Value.ToString()+", ";
+                    if (fi_rand.Checked)
+                    {
+                        fi += "random=True,";
+                    }
+                    else fi += "random=False,";
+
+                    fi += " percentage=" + fi_per.Value.ToString() + ", media='Photo')"+Environment.NewLine;
+
+
+                    File.AppendAllText(FILENAME, fi);
+
+                }
+
+                #endregion
+
+                #region FOLLOW SOMEONE ELSE'S FOLLOWERS
+
+                if (FSEF_check.Checked)
+                {
+                    string fsef = "session.follow_user_followers([";
+                    string[] fsef_users = { };
+
+                    if (FSEF_txt.Text.Equals(string.Empty))
+                    {
+
+                        MessageBox.Show("ERROR: No users detected. Write some users or deselect this option.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        cant4 = false;
+                        FSEF_txt.Focus();
+
+                    }
+                    else {
+                        fsef_users = FSEF_txt.Text.Split(',');
+                        cant4 = true;
+                         }
+                    foreach (var item in fsef_users)
+                    {
+                        // If there is emtpy tag skip it
+                        if (item.Equals(string.Empty))
+                        {
+                            continue;
+                        }
+                        else fsef += "'" + item + "', ";
+                    }
+                    fsef = fsef.Remove(fsef.Length - 2, 1) + "]";
+                    fsef += ", amount = " + fsef_amount.Value.ToString()+",";
+
+                    if (fsef_rand.Checked)
+                    {
+                        fsef += " random=True";
+                    }else fsef += " random=False";
+
+                    if (fsef_delay.Value.ToString() != "600")
+                    {
+                        fsef += ", delay=" + fsef_delay.Value.ToString();
+                    }
+                    if (fsef_int.Checked)
+                    {
+                        fi_ch.Checked = true;
+                        fsef += ", interact=True)" + Environment.NewLine;
+                    }
+                    else fsef += ")" + Environment.NewLine;
+                    
+                    File.AppendAllText(FILENAME, fsef);
+
+                }
+
+                #endregion
+
+                #region Follow users that someone else is following
+
+                if (fusef_ch.Checked)
+                {
+                    string fusef = "session.follow_user_following([";
+                    string[] fusef_users = { };
+
+                    if (fusef_txt.Text.Equals(string.Empty))
+                    {
+
+                        MessageBox.Show("ERROR: No users detected. Write some users or deselect this option.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        cant5 = false;
+
+                        fusef_txt.Focus();
+
+                    }
+                    else {
+                        fusef_users = fusef_txt.Text.Split(','); cant5 = true;
+                        }
+                    foreach (var item in fusef_users)
+                    {
+                        // If there is emtpy tag skip it
+                        if (item.Equals(string.Empty))
+                        {
+                            continue;
+                        }
+                        else fusef += "'" + item + "', ";
+                    }
+                    fusef = fusef.Remove(fusef.Length - 2, 1) + "]";
+                    fusef += ", amount = " + fusef_amoun.Value.ToString() + ",";
+
+                    if (fusef_rand.Checked)
+                    {
+                        fusef += " random=True";
+                    }
+                    else fusef += " random=False";
+
+                    if (fusef_delay.Value.ToString() != "600")
+                    {
+                        fusef += ", delay=" + fusef_delay.Value.ToString() + ")" + Environment.NewLine;
+                    }
+                    else fusef += ")" + Environment.NewLine;
+
+                    
+                    File.AppendAllText(FILENAME, fusef);
+
+                }
+
+
+
+                #endregion
+
+
+                #region FOLLOW FROM LIST
+                /*========================================================================
 				 *			Follow from list
 				 * 
 				 * ========================================================================*/
-				if (followfromlist.Checked)
+                if (followfromlist.Checked)
 				{
 					string followfromlist2 = "session.follow_by_list(accs, times=1)"+Environment.NewLine;
 					string accs = "accs = ['";
@@ -583,7 +708,7 @@ namespace InstaPy
 				 *			Closing file and running it
 				 * 
 				 * ========================================================================*/
-                if (cant && cant2 &&cant3)
+                if (cant && cant2 &&cant3 && cant4 &&cant5)
 				{
 					File.AppendAllText(FILENAME, Environment.NewLine + "session.end()");
 
@@ -859,6 +984,33 @@ namespace InstaPy
                     likefromtags.Checked = true;
                 
             }
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (FSEF_check.Checked)
+            {
+                panel14.BackColor = System.Drawing.Color.LightGreen;
+            }
+            else panel14.BackColor = System.Drawing.Color.LightSalmon;
+        }
+
+        private void fusef_ch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fusef_ch.Checked)
+            {
+                panel15.BackColor = System.Drawing.Color.LightGreen;
+            }
+            else panel15.BackColor = System.Drawing.Color.LightSalmon;
+        }
+
+        private void checkBox1_CheckedChanged_2(object sender, EventArgs e)
+        {
+            if (fi_ch.Checked)
+            {
+                panel16.BackColor = System.Drawing.Color.LightGreen;
+            }
+            else panel16.BackColor = System.Drawing.Color.LightSalmon;
         }
     }
 }
