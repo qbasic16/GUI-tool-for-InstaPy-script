@@ -18,3 +18,4 @@ C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-scri
 C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.csproj.GenerateResource.Cache
 C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.exe
 C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.pdb
+C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\bin\Debug\MaterialSkin.dll

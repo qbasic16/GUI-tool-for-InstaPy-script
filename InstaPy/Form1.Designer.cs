@@ -112,31 +112,31 @@
             this.label12 = new System.Windows.Forms.Label();
             this.likefromlocation = new System.Windows.Forms.CheckBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.FSEF_check = new System.Windows.Forms.CheckBox();
-            this.FSEF_txt = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.fsef_amount = new System.Windows.Forms.NumericUpDown();
-            this.label15 = new System.Windows.Forms.Label();
-            this.fsef_rand = new System.Windows.Forms.CheckBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.fsef_int = new System.Windows.Forms.CheckBox();
             this.fsef_delay = new System.Windows.Forms.NumericUpDown();
-            this.fusef_ch = new System.Windows.Forms.CheckBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.fusef_txt = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.fsef_rand = new System.Windows.Forms.CheckBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.fsef_amount = new System.Windows.Forms.NumericUpDown();
+            this.label14 = new System.Windows.Forms.Label();
+            this.FSEF_txt = new System.Windows.Forms.TextBox();
+            this.FSEF_check = new System.Windows.Forms.CheckBox();
+            this.panel15 = new System.Windows.Forms.Panel();
             this.fusef_delay = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.fusef_rand = new System.Windows.Forms.CheckBox();
             this.label19 = new System.Windows.Forms.Label();
             this.fusef_amoun = new System.Windows.Forms.NumericUpDown();
+            this.fusef_txt = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.fusef_ch = new System.Windows.Forms.CheckBox();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.fi_ch = new System.Windows.Forms.CheckBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.fi_amount = new System.Windows.Forms.NumericUpDown();
-            this.fi_rand = new System.Windows.Forms.CheckBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.fi_per = new System.Windows.Forms.NumericUpDown();
-            this.fsef_int = new System.Windows.Forms.CheckBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.fi_rand = new System.Windows.Forms.CheckBox();
+            this.fi_amount = new System.Windows.Forms.NumericUpDown();
+            this.label20 = new System.Windows.Forms.Label();
+            this.fi_ch = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comment_percent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.following_percent)).BeginInit();
@@ -162,14 +162,14 @@
             this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.location_nmb)).BeginInit();
             this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fsef_amount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fsef_delay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fsef_amount)).BeginInit();
+            this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fusef_delay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fusef_amoun)).BeginInit();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fi_amount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fi_per)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fi_amount)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -266,7 +266,7 @@
             this.exitToolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(799, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(788, 24);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1080,89 +1080,15 @@
             this.panel14.Size = new System.Drawing.Size(385, 134);
             this.panel14.TabIndex = 40;
             // 
-            // panel15
+            // fsef_int
             // 
-            this.panel15.BackColor = System.Drawing.Color.LightSalmon;
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.fusef_delay);
-            this.panel15.Controls.Add(this.label18);
-            this.panel15.Controls.Add(this.fusef_rand);
-            this.panel15.Controls.Add(this.label19);
-            this.panel15.Controls.Add(this.fusef_amoun);
-            this.panel15.Controls.Add(this.fusef_txt);
-            this.panel15.Controls.Add(this.label17);
-            this.panel15.Controls.Add(this.fusef_ch);
-            this.panel15.Location = new System.Drawing.Point(403, 474);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(385, 134);
-            this.panel15.TabIndex = 41;
-            // 
-            // FSEF_check
-            // 
-            this.FSEF_check.AutoSize = true;
-            this.FSEF_check.Location = new System.Drawing.Point(7, 3);
-            this.FSEF_check.Name = "FSEF_check";
-            this.FSEF_check.Size = new System.Drawing.Size(253, 24);
-            this.FSEF_check.TabIndex = 0;
-            this.FSEF_check.Text = "Follow someone else\'s followers";
-            this.FSEF_check.UseVisualStyleBackColor = true;
-            this.FSEF_check.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
-            // 
-            // FSEF_txt
-            // 
-            this.FSEF_txt.Location = new System.Drawing.Point(78, 27);
-            this.FSEF_txt.Name = "FSEF_txt";
-            this.FSEF_txt.Size = new System.Drawing.Size(301, 26);
-            this.FSEF_txt.TabIndex = 1;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(25, 30);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 20);
-            this.label14.TabIndex = 2;
-            this.label14.Text = "Users";
-            // 
-            // fsef_amount
-            // 
-            this.fsef_amount.Location = new System.Drawing.Point(94, 57);
-            this.fsef_amount.Name = "fsef_amount";
-            this.fsef_amount.Size = new System.Drawing.Size(94, 26);
-            this.fsef_amount.TabIndex = 3;
-            this.fsef_amount.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(25, 59);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(65, 20);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "Amount";
-            // 
-            // fsef_rand
-            // 
-            this.fsef_rand.AutoSize = true;
-            this.fsef_rand.Location = new System.Drawing.Point(196, 59);
-            this.fsef_rand.Name = "fsef_rand";
-            this.fsef_rand.Size = new System.Drawing.Size(89, 24);
-            this.fsef_rand.TabIndex = 5;
-            this.fsef_rand.Text = "Random";
-            this.fsef_rand.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(25, 91);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(91, 20);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "Sleep delay";
+            this.fsef_int.AutoSize = true;
+            this.fsef_int.Location = new System.Drawing.Point(248, 91);
+            this.fsef_int.Name = "fsef_int";
+            this.fsef_int.Size = new System.Drawing.Size(83, 24);
+            this.fsef_int.TabIndex = 8;
+            this.fsef_int.Text = "Interact";
+            this.fsef_int.UseVisualStyleBackColor = true;
             // 
             // fsef_delay
             // 
@@ -1181,32 +1107,89 @@
             0,
             0});
             // 
-            // fusef_ch
+            // label16
             // 
-            this.fusef_ch.AutoSize = true;
-            this.fusef_ch.Location = new System.Drawing.Point(6, 3);
-            this.fusef_ch.Name = "fusef_ch";
-            this.fusef_ch.Size = new System.Drawing.Size(331, 24);
-            this.fusef_ch.TabIndex = 0;
-            this.fusef_ch.Text = "Follow users that someone else is following";
-            this.fusef_ch.UseVisualStyleBackColor = true;
-            this.fusef_ch.CheckedChanged += new System.EventHandler(this.fusef_ch_CheckedChanged);
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(25, 91);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(91, 20);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "Sleep delay";
             // 
-            // label17
+            // fsef_rand
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(23, 30);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(51, 20);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Users";
+            this.fsef_rand.AutoSize = true;
+            this.fsef_rand.Location = new System.Drawing.Point(196, 59);
+            this.fsef_rand.Name = "fsef_rand";
+            this.fsef_rand.Size = new System.Drawing.Size(89, 24);
+            this.fsef_rand.TabIndex = 5;
+            this.fsef_rand.Text = "Random";
+            this.fsef_rand.UseVisualStyleBackColor = true;
             // 
-            // fusef_txt
+            // label15
             // 
-            this.fusef_txt.Location = new System.Drawing.Point(80, 27);
-            this.fusef_txt.Name = "fusef_txt";
-            this.fusef_txt.Size = new System.Drawing.Size(289, 26);
-            this.fusef_txt.TabIndex = 2;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(25, 59);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 20);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Amount";
+            // 
+            // fsef_amount
+            // 
+            this.fsef_amount.Location = new System.Drawing.Point(94, 57);
+            this.fsef_amount.Name = "fsef_amount";
+            this.fsef_amount.Size = new System.Drawing.Size(94, 26);
+            this.fsef_amount.TabIndex = 3;
+            this.fsef_amount.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(25, 30);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 20);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Users";
+            // 
+            // FSEF_txt
+            // 
+            this.FSEF_txt.Location = new System.Drawing.Point(78, 27);
+            this.FSEF_txt.Name = "FSEF_txt";
+            this.FSEF_txt.Size = new System.Drawing.Size(301, 26);
+            this.FSEF_txt.TabIndex = 1;
+            // 
+            // FSEF_check
+            // 
+            this.FSEF_check.AutoSize = true;
+            this.FSEF_check.Location = new System.Drawing.Point(7, 3);
+            this.FSEF_check.Name = "FSEF_check";
+            this.FSEF_check.Size = new System.Drawing.Size(253, 24);
+            this.FSEF_check.TabIndex = 0;
+            this.FSEF_check.Text = "Follow someone else\'s followers";
+            this.FSEF_check.UseVisualStyleBackColor = true;
+            this.FSEF_check.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.LightSalmon;
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.fusef_delay);
+            this.panel15.Controls.Add(this.label18);
+            this.panel15.Controls.Add(this.fusef_rand);
+            this.panel15.Controls.Add(this.label19);
+            this.panel15.Controls.Add(this.fusef_amoun);
+            this.panel15.Controls.Add(this.fusef_txt);
+            this.panel15.Controls.Add(this.label17);
+            this.panel15.Controls.Add(this.fusef_ch);
+            this.panel15.Location = new System.Drawing.Point(403, 474);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(385, 134);
+            this.panel15.TabIndex = 41;
             // 
             // fusef_delay
             // 
@@ -1265,6 +1248,33 @@
             0,
             0});
             // 
+            // fusef_txt
+            // 
+            this.fusef_txt.Location = new System.Drawing.Point(80, 27);
+            this.fusef_txt.Name = "fusef_txt";
+            this.fusef_txt.Size = new System.Drawing.Size(289, 26);
+            this.fusef_txt.TabIndex = 2;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(23, 30);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(51, 20);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Users";
+            // 
+            // fusef_ch
+            // 
+            this.fusef_ch.AutoSize = true;
+            this.fusef_ch.Location = new System.Drawing.Point(6, 3);
+            this.fusef_ch.Name = "fusef_ch";
+            this.fusef_ch.Size = new System.Drawing.Size(331, 24);
+            this.fusef_ch.TabIndex = 0;
+            this.fusef_ch.Text = "Follow users that someone else is following";
+            this.fusef_ch.UseVisualStyleBackColor = true;
+            this.fusef_ch.CheckedChanged += new System.EventHandler(this.fusef_ch_CheckedChanged);
+            // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.LightSalmon;
@@ -1280,25 +1290,36 @@
             this.panel16.Size = new System.Drawing.Size(776, 69);
             this.panel16.TabIndex = 42;
             // 
-            // fi_ch
+            // fi_per
             // 
-            this.fi_ch.AutoSize = true;
-            this.fi_ch.Location = new System.Drawing.Point(8, 3);
-            this.fi_ch.Name = "fi_ch";
-            this.fi_ch.Size = new System.Drawing.Size(173, 24);
-            this.fi_ch.TabIndex = 0;
-            this.fi_ch.Text = "Followers interaction";
-            this.fi_ch.UseVisualStyleBackColor = true;
-            this.fi_ch.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_2);
+            this.fi_per.Location = new System.Drawing.Point(301, 28);
+            this.fi_per.Name = "fi_per";
+            this.fi_per.Size = new System.Drawing.Size(68, 26);
+            this.fi_per.TabIndex = 5;
+            this.fi_per.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             // 
-            // label20
+            // label21
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(25, 30);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(65, 20);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Amount";
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(231, 30);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(64, 20);
+            this.label21.TabIndex = 4;
+            this.label21.Text = "Percent";
+            // 
+            // fi_rand
+            // 
+            this.fi_rand.AutoSize = true;
+            this.fi_rand.Location = new System.Drawing.Point(376, 29);
+            this.fi_rand.Name = "fi_rand";
+            this.fi_rand.Size = new System.Drawing.Size(89, 24);
+            this.fi_rand.TabIndex = 3;
+            this.fi_rand.Text = "Random";
+            this.fi_rand.UseVisualStyleBackColor = true;
             // 
             // fi_amount
             // 
@@ -1317,46 +1338,25 @@
             0,
             0});
             // 
-            // fi_rand
+            // label20
             // 
-            this.fi_rand.AutoSize = true;
-            this.fi_rand.Location = new System.Drawing.Point(376, 29);
-            this.fi_rand.Name = "fi_rand";
-            this.fi_rand.Size = new System.Drawing.Size(89, 24);
-            this.fi_rand.TabIndex = 3;
-            this.fi_rand.Text = "Random";
-            this.fi_rand.UseVisualStyleBackColor = true;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(25, 30);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(65, 20);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "Amount";
             // 
-            // label21
+            // fi_ch
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(231, 30);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(64, 20);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "Percent";
-            // 
-            // fi_per
-            // 
-            this.fi_per.Location = new System.Drawing.Point(301, 28);
-            this.fi_per.Name = "fi_per";
-            this.fi_per.Size = new System.Drawing.Size(68, 26);
-            this.fi_per.TabIndex = 5;
-            this.fi_per.Value = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            // 
-            // fsef_int
-            // 
-            this.fsef_int.AutoSize = true;
-            this.fsef_int.Location = new System.Drawing.Point(248, 91);
-            this.fsef_int.Name = "fsef_int";
-            this.fsef_int.Size = new System.Drawing.Size(83, 24);
-            this.fsef_int.TabIndex = 8;
-            this.fsef_int.Text = "Interact";
-            this.fsef_int.UseVisualStyleBackColor = true;
+            this.fi_ch.AutoSize = true;
+            this.fi_ch.Location = new System.Drawing.Point(8, 3);
+            this.fi_ch.Name = "fi_ch";
+            this.fi_ch.Size = new System.Drawing.Size(173, 24);
+            this.fi_ch.TabIndex = 0;
+            this.fi_ch.Text = "Followers interaction";
+            this.fi_ch.UseVisualStyleBackColor = true;
+            this.fi_ch.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_2);
             // 
             // Form1
             // 
@@ -1364,7 +1364,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(816, 634);
+            this.ClientSize = new System.Drawing.Size(816, 668);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel14);
@@ -1388,7 +1388,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1437,16 +1437,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.location_nmb)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fsef_delay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fsef_amount)).EndInit();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fsef_amount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fsef_delay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fusef_delay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fusef_amoun)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fi_amount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fi_per)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fi_amount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

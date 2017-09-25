@@ -480,7 +480,7 @@ namespace InstaPy
 
                     if (fsef_delay.Value.ToString() != "600")
                     {
-                        fsef += ", delay=" + fsef_delay.Value.ToString();
+                        fsef += ", sleep_delay=" + fsef_delay.Value.ToString();
                     }
                     if (fsef_int.Checked)
                     {
@@ -534,7 +534,7 @@ namespace InstaPy
 
                     if (fusef_delay.Value.ToString() != "600")
                     {
-                        fusef += ", delay=" + fusef_delay.Value.ToString() + ")" + Environment.NewLine;
+                        fusef += ", sleep_delay=" + fusef_delay.Value.ToString() + ")" + Environment.NewLine;
                     }
                     else fusef += ")" + Environment.NewLine;
 
