@@ -33,5 +33,13 @@ namespace InstaPy
 			System.Diagnostics.Process.Start("https://github.com/timgrossmann/InstaPy");
 			
 		}
+
+		private void About_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if(e.KeyChar == (char)Keys.Escape)
+			{
+				Close();
+			}
+		}
 	}
 }

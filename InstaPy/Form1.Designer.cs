@@ -242,6 +242,7 @@
 			// likerestrict_txt
 			// 
 			this.likerestrict_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.likerestrict_txt.Enabled = false;
 			this.likerestrict_txt.Location = new System.Drawing.Point(194, 6);
 			this.likerestrict_txt.Name = "likerestrict_txt";
 			this.likerestrict_txt.Size = new System.Drawing.Size(175, 26);
@@ -322,6 +323,7 @@
 			// restrictignore_txt
 			// 
 			this.restrictignore_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.restrictignore_txt.Enabled = false;
 			this.restrictignore_txt.Location = new System.Drawing.Point(180, 6);
 			this.restrictignore_txt.Name = "restrictignore_txt";
 			this.restrictignore_txt.Size = new System.Drawing.Size(189, 26);
@@ -329,6 +331,7 @@
 			// 
 			// comment_percent
 			// 
+			this.comment_percent.Enabled = false;
 			this.comment_percent.Location = new System.Drawing.Point(93, 29);
 			this.comment_percent.Minimum = new decimal(new int[] {
             1,
@@ -365,6 +368,7 @@
 			// comment_cust_txt
 			// 
 			this.comment_cust_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.comment_cust_txt.Enabled = false;
 			this.comment_cust_txt.Location = new System.Drawing.Point(174, 59);
 			this.comment_cust_txt.Name = "comment_cust_txt";
 			this.comment_cust_txt.Size = new System.Drawing.Size(195, 26);
@@ -479,6 +483,7 @@
 			// emojisupport
 			// 
 			this.emojisupport.AutoSize = true;
+			this.emojisupport.Enabled = false;
 			this.emojisupport.Location = new System.Drawing.Point(313, 25);
 			this.emojisupport.Name = "emojisupport";
 			this.emojisupport.Size = new System.Drawing.Size(67, 24);
@@ -489,6 +494,7 @@
 			// commentingVideo
 			// 
 			this.commentingVideo.AutoSize = true;
+			this.commentingVideo.Enabled = false;
 			this.commentingVideo.Location = new System.Drawing.Point(242, 25);
 			this.commentingVideo.Name = "commentingVideo";
 			this.commentingVideo.Size = new System.Drawing.Size(69, 24);
@@ -499,6 +505,7 @@
 			// commentingPhoto
 			// 
 			this.commentingPhoto.AutoSize = true;
+			this.commentingPhoto.Enabled = false;
 			this.commentingPhoto.Location = new System.Drawing.Point(174, 25);
 			this.commentingPhoto.Name = "commentingPhoto";
 			this.commentingPhoto.Size = new System.Drawing.Size(70, 24);
@@ -508,6 +515,7 @@
 			// 
 			// unfollow_nmbr
 			// 
+			this.unfollow_nmbr.Enabled = false;
 			this.unfollow_nmbr.Location = new System.Drawing.Point(123, 5);
 			this.unfollow_nmbr.Maximum = new decimal(new int[] {
             100000000,
@@ -795,6 +803,7 @@
 			// restrlikesusers
 			// 
 			this.restrlikesusers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.restrlikesusers.Enabled = false;
 			this.restrlikesusers.Location = new System.Drawing.Point(204, 6);
 			this.restrlikesusers.Name = "restrlikesusers";
 			this.restrlikesusers.Size = new System.Drawing.Size(165, 26);
@@ -1372,7 +1381,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(833, 668);
+			this.ClientSize = new System.Drawing.Size(833, 729);
 			this.Controls.Add(this.panel16);
 			this.Controls.Add(this.panel15);
 			this.Controls.Add(this.panel14);
@@ -1400,6 +1409,8 @@
 			this.MainMenuStrip = this.menuStrip1;
 			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.MaximizeBox = false;
+			this.MaximumSize = new System.Drawing.Size(849, 1060);
+			this.MinimumSize = new System.Drawing.Size(849, 768);
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "InstaPy GUI";

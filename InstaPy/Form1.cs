@@ -734,14 +734,10 @@ namespace InstaPy
 			{
 				panel8.BackColor = System.Drawing.Color.LightGreen;
 			}
-			else panel8.BackColor = System.Drawing.Color.LightSalmon;
-
-			if (!likefromtags.Checked)
+			else
 			{
-
 				likefromimage.Checked = true;
-
-
+				panel8.BackColor = System.Drawing.Color.LightSalmon;
 			}
 		}
 
@@ -751,38 +747,47 @@ namespace InstaPy
 			{
 				panel11.BackColor = System.Drawing.Color.LightGreen;
 			}
-			else panel11.BackColor = System.Drawing.Color.LightSalmon;
-			if (!likefromimage.Checked)
+			else
 			{
-
+				panel11.BackColor = System.Drawing.Color.LightSalmon;
 				likefromlocation.Checked = true;
-
 			}
 		}
 
 		private void likerestrict_CheckedChanged(object sender, EventArgs e)
 		{
+			likerestrict_txt.Enabled = likerestrict.Checked;
 			if (likerestrict.Checked)
 			{
+				likerestrict_txt.Focus();
 				panel1.BackColor = System.Drawing.Color.LightGreen;
 			}
-			else panel1.BackColor = System.Drawing.Color.LightSalmon;
-
+			else
+			{
+				panel1.BackColor = System.Drawing.Color.LightSalmon;
+			}
 		}
 
 		private void restrictlikesusers_CheckedChanged(object sender, EventArgs e)
 		{
+			restrlikesusers.Enabled = restrictlikesusers.Checked;
 			if (restrictlikesusers.Checked)
 			{
+				restrlikesusers.Focus();
 				panel10.BackColor = System.Drawing.Color.LightGreen;
 			}
-			else panel10.BackColor = System.Drawing.Color.LightSalmon;
+			else
+			{
+				panel10.BackColor = System.Drawing.Color.LightSalmon;
+			}
 		}
 
 		private void restrictignore_CheckedChanged(object sender, EventArgs e)
 		{
+			restrictignore_txt.Enabled = restrictignore.Checked;
 			if (restrictignore.Checked)
 			{
+				restrictignore_txt.Focus();
 				panel2.BackColor = System.Drawing.Color.LightGreen;
 			}
 			else panel2.BackColor = System.Drawing.Color.LightSalmon;
@@ -790,11 +795,20 @@ namespace InstaPy
 
 		private void comment_CheckedChanged(object sender, EventArgs e)
 		{
+			comment_percent.Enabled = comment.Checked;
+			commentingPhoto.Enabled = comment.Checked;
+			commentingVideo.Enabled = comment.Checked;
+			emojisupport.Enabled = comment.Checked;
+			comment_cust_txt.Enabled = comment.Checked;
 			if (comment.Checked)
 			{
+				comment_cust_txt.Focus();
 				panel3.BackColor = System.Drawing.Color.LightGreen;
 			}
-			else panel3.BackColor = System.Drawing.Color.LightSalmon;
+			else
+			{
+				panel3.BackColor = System.Drawing.Color.LightSalmon;
+			}
 		}
 
 		private void following_CheckedChanged(object sender, EventArgs e)
@@ -844,8 +858,10 @@ namespace InstaPy
 
 		private void unfollow_CheckedChanged(object sender, EventArgs e)
 		{
+			unfollow_nmbr.Enabled = unfollow.Checked;
 			if (unfollow.Checked)
 			{
+				unfollow_nmbr.Focus();
 				panel7.BackColor = System.Drawing.Color.LightGreen;
 			}
 			else panel7.BackColor = System.Drawing.Color.LightSalmon;
