@@ -26,12 +26,12 @@ namespace InstaPy.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string usernpass {
+        public string username {
             get {
-                return ((string)(this["usernpass"]));
+                return ((string)(this["username"]));
             }
             set {
-                this["usernpass"] = value;
+                this["username"] = value;
             }
         }
         
@@ -44,6 +44,18 @@ namespace InstaPy.Properties {
             }
             set {
                 this["readmedontshow"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string password {
+            get {
+                return ((string)(this["password"]));
+            }
+            set {
+                this["password"] = value;
             }
         }
     }

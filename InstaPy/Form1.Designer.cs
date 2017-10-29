@@ -40,12 +40,10 @@
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.deleteCredentialsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-			this.dontShowReadmeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.downloadInstaPyFilesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.downloadChromedriverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.exitToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 			this.restrictignore_txt = new System.Windows.Forms.TextBox();
 			this.comment_percent = new System.Windows.Forms.NumericUpDown();
 			this.label3 = new System.Windows.Forms.Label();
@@ -82,7 +80,6 @@
 			this.tags_lbl = new System.Windows.Forms.Label();
 			this.likesfromtags_txt = new System.Windows.Forms.TextBox();
 			this.panel9 = new System.Windows.Forms.Panel();
-			this.remember = new System.Windows.Forms.CheckBox();
 			this.pass_txt = new System.Windows.Forms.TextBox();
 			this.username_txt = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
@@ -137,6 +134,10 @@
 			this.fi_amount = new System.Windows.Forms.NumericUpDown();
 			this.label20 = new System.Windows.Forms.Label();
 			this.fi_ch = new System.Windows.Forms.CheckBox();
+			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.dontShowReadmeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.comment_percent)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.following_percent)).BeginInit();
@@ -180,7 +181,7 @@
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(378, 73);
-			this.label1.TabIndex = 0;
+			this.label1.TabIndex = 1;
 			this.label1.Text = "InstaPy GUI";
 			// 
 			// likerestrict
@@ -189,7 +190,7 @@
 			this.likerestrict.Location = new System.Drawing.Point(6, 7);
 			this.likerestrict.Name = "likerestrict";
 			this.likerestrict.Size = new System.Drawing.Size(184, 24);
-			this.likerestrict.TabIndex = 1;
+			this.likerestrict.TabIndex = 0;
 			this.likerestrict.Text = "Restricting Likes Tags";
 			this.likerestrict.UseVisualStyleBackColor = true;
 			this.likerestrict.CheckedChanged += new System.EventHandler(this.likerestrict_CheckedChanged);
@@ -200,7 +201,7 @@
 			this.restrictignore.Location = new System.Drawing.Point(6, 7);
 			this.restrictignore.Name = "restrictignore";
 			this.restrictignore.Size = new System.Drawing.Size(174, 24);
-			this.restrictignore.TabIndex = 2;
+			this.restrictignore.TabIndex = 0;
 			this.restrictignore.Text = "Ignoring Restrictions";
 			this.restrictignore.UseVisualStyleBackColor = true;
 			this.restrictignore.CheckedChanged += new System.EventHandler(this.restrictignore_CheckedChanged);
@@ -211,7 +212,7 @@
 			this.comment.Location = new System.Drawing.Point(6, 3);
 			this.comment.Name = "comment";
 			this.comment.Size = new System.Drawing.Size(118, 24);
-			this.comment.TabIndex = 3;
+			this.comment.TabIndex = 0;
 			this.comment.Text = "Commenting";
 			this.comment.UseVisualStyleBackColor = true;
 			this.comment.CheckedChanged += new System.EventHandler(this.comment_CheckedChanged);
@@ -244,7 +245,7 @@
 			this.likerestrict_txt.Location = new System.Drawing.Point(194, 6);
 			this.likerestrict_txt.Name = "likerestrict_txt";
 			this.likerestrict_txt.Size = new System.Drawing.Size(175, 26);
-			this.likerestrict_txt.TabIndex = 8;
+			this.likerestrict_txt.TabIndex = 1;
 			// 
 			// label2
 			// 
@@ -253,7 +254,7 @@
 			this.label2.Location = new System.Drawing.Point(195, 78);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(177, 18);
-			this.label2.TabIndex = 9;
+			this.label2.TabIndex = 2;
 			this.label2.Text = "GUI tool for InstaPy script";
 			// 
 			// menuStrip1
@@ -262,12 +263,11 @@
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.infoToolStripMenuItem,
-            this.aboutToolStripMenuItem,
-            this.exitToolStripMenuItem2});
+            this.aboutToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(799, 24);
-			this.menuStrip1.TabIndex = 10;
+			this.menuStrip1.Size = new System.Drawing.Size(816, 24);
+			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// fileToolStripMenuItem
@@ -275,8 +275,11 @@
 			this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.deleteCredentialsToolStripMenuItem2,
             this.dontShowReadmeToolStripMenuItem1,
+            this.toolStripSeparator2,
             this.downloadInstaPyFilesToolStripMenuItem1,
-            this.downloadChromedriverToolStripMenuItem});
+            this.downloadChromedriverToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.exitToolStripMenuItem});
 			this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
 			this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
 			this.fileToolStripMenuItem.Text = "File";
@@ -287,15 +290,6 @@
 			this.deleteCredentialsToolStripMenuItem2.Size = new System.Drawing.Size(204, 22);
 			this.deleteCredentialsToolStripMenuItem2.Text = "Delete credentials";
 			this.deleteCredentialsToolStripMenuItem2.Click += new System.EventHandler(this.deleteCredentialsToolStripMenuItem2_Click);
-			// 
-			// dontShowReadmeToolStripMenuItem1
-			// 
-			this.dontShowReadmeToolStripMenuItem1.Checked = global::InstaPy.Properties.Settings.Default.readmedontshow;
-			this.dontShowReadmeToolStripMenuItem1.CheckOnClick = true;
-			this.dontShowReadmeToolStripMenuItem1.Name = "dontShowReadmeToolStripMenuItem1";
-			this.dontShowReadmeToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
-			this.dontShowReadmeToolStripMenuItem1.Text = "Don\'t show readme";
-			this.dontShowReadmeToolStripMenuItem1.CheckedChanged += new System.EventHandler(this.toggleReadmeToolStripMenuItem1_CheckedChanged);
 			// 
 			// downloadInstaPyFilesToolStripMenuItem1
 			// 
@@ -325,20 +319,13 @@
 			this.aboutToolStripMenuItem.Text = "About";
 			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
 			// 
-			// exitToolStripMenuItem2
-			// 
-			this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
-			this.exitToolStripMenuItem2.Size = new System.Drawing.Size(37, 20);
-			this.exitToolStripMenuItem2.Text = "Exit";
-			this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
-			// 
 			// restrictignore_txt
 			// 
 			this.restrictignore_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.restrictignore_txt.Location = new System.Drawing.Point(180, 6);
 			this.restrictignore_txt.Name = "restrictignore_txt";
 			this.restrictignore_txt.Size = new System.Drawing.Size(189, 26);
-			this.restrictignore_txt.TabIndex = 11;
+			this.restrictignore_txt.TabIndex = 1;
 			// 
 			// comment_percent
 			// 
@@ -350,7 +337,7 @@
             0});
 			this.comment_percent.Name = "comment_percent";
 			this.comment_percent.Size = new System.Drawing.Size(75, 26);
-			this.comment_percent.TabIndex = 12;
+			this.comment_percent.TabIndex = 1;
 			this.comment_percent.Value = new decimal(new int[] {
             25,
             0,
@@ -381,7 +368,7 @@
 			this.comment_cust_txt.Location = new System.Drawing.Point(174, 59);
 			this.comment_cust_txt.Name = "comment_cust_txt";
 			this.comment_cust_txt.Size = new System.Drawing.Size(195, 26);
-			this.comment_cust_txt.TabIndex = 15;
+			this.comment_cust_txt.TabIndex = 5;
 			// 
 			// following_percent
 			// 
@@ -459,7 +446,7 @@
 			this.panel1.Location = new System.Drawing.Point(12, 197);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(385, 40);
-			this.panel1.TabIndex = 24;
+			this.panel1.TabIndex = 4;
 			// 
 			// panel2
 			// 
@@ -470,7 +457,7 @@
 			this.panel2.Location = new System.Drawing.Point(12, 289);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(385, 40);
-			this.panel2.TabIndex = 25;
+			this.panel2.TabIndex = 7;
 			// 
 			// panel3
 			// 
@@ -487,7 +474,7 @@
 			this.panel3.Location = new System.Drawing.Point(403, 197);
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(385, 100);
-			this.panel3.TabIndex = 26;
+			this.panel3.TabIndex = 5;
 			// 
 			// emojisupport
 			// 
@@ -495,7 +482,7 @@
 			this.emojisupport.Location = new System.Drawing.Point(313, 25);
 			this.emojisupport.Name = "emojisupport";
 			this.emojisupport.Size = new System.Drawing.Size(67, 24);
-			this.emojisupport.TabIndex = 18;
+			this.emojisupport.TabIndex = 4;
 			this.emojisupport.Text = "Emoji";
 			this.emojisupport.UseVisualStyleBackColor = true;
 			// 
@@ -505,7 +492,7 @@
 			this.commentingVideo.Location = new System.Drawing.Point(242, 25);
 			this.commentingVideo.Name = "commentingVideo";
 			this.commentingVideo.Size = new System.Drawing.Size(69, 24);
-			this.commentingVideo.TabIndex = 17;
+			this.commentingVideo.TabIndex = 3;
 			this.commentingVideo.Text = "Video";
 			this.commentingVideo.UseVisualStyleBackColor = true;
 			// 
@@ -515,7 +502,7 @@
 			this.commentingPhoto.Location = new System.Drawing.Point(174, 25);
 			this.commentingPhoto.Name = "commentingPhoto";
 			this.commentingPhoto.Size = new System.Drawing.Size(70, 24);
-			this.commentingPhoto.TabIndex = 16;
+			this.commentingPhoto.TabIndex = 2;
 			this.commentingPhoto.Text = "Photo";
 			this.commentingPhoto.UseVisualStyleBackColor = true;
 			// 
@@ -548,7 +535,7 @@
 			this.panel4.Location = new System.Drawing.Point(12, 335);
 			this.panel4.Name = "panel4";
 			this.panel4.Size = new System.Drawing.Size(385, 60);
-			this.panel4.TabIndex = 28;
+			this.panel4.TabIndex = 9;
 			// 
 			// followtimes
 			// 
@@ -580,7 +567,7 @@
 			this.panel5.Location = new System.Drawing.Point(403, 349);
 			this.panel5.Name = "panel5";
 			this.panel5.Size = new System.Drawing.Size(385, 46);
-			this.panel5.TabIndex = 29;
+			this.panel5.TabIndex = 10;
 			// 
 			// panel6
 			// 
@@ -593,7 +580,7 @@
 			this.panel6.Location = new System.Drawing.Point(12, 401);
 			this.panel6.Name = "panel6";
 			this.panel6.Size = new System.Drawing.Size(385, 67);
-			this.panel6.TabIndex = 30;
+			this.panel6.TabIndex = 11;
 			// 
 			// lowerfc_percent
 			// 
@@ -635,7 +622,7 @@
 			this.panel7.Location = new System.Drawing.Point(403, 303);
 			this.panel7.Name = "panel7";
 			this.panel7.Size = new System.Drawing.Size(385, 40);
-			this.panel7.TabIndex = 31;
+			this.panel7.TabIndex = 8;
 			// 
 			// run
 			// 
@@ -644,7 +631,7 @@
 			this.run.Location = new System.Drawing.Point(261, 916);
 			this.run.Name = "run";
 			this.run.Size = new System.Drawing.Size(278, 42);
-			this.run.TabIndex = 32;
+			this.run.TabIndex = 19;
 			this.run.Text = "RUN !";
 			this.run.UseVisualStyleBackColor = false;
 			this.run.Click += new System.EventHandler(this.button1_Click_1);
@@ -663,7 +650,7 @@
 			this.panel8.Location = new System.Drawing.Point(12, 690);
 			this.panel8.Name = "panel8";
 			this.panel8.Size = new System.Drawing.Size(776, 69);
-			this.panel8.TabIndex = 33;
+			this.panel8.TabIndex = 16;
 			// 
 			// likefromtagsvideo
 			// 
@@ -746,42 +733,35 @@
 			// 
 			this.panel9.BackColor = System.Drawing.Color.LightGreen;
 			this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel9.Controls.Add(this.remember);
 			this.panel9.Controls.Add(this.pass_txt);
 			this.panel9.Controls.Add(this.username_txt);
 			this.panel9.Controls.Add(this.label7);
 			this.panel9.Controls.Add(this.label6);
-			this.panel9.Location = new System.Drawing.Point(199, 97);
+			this.panel9.Location = new System.Drawing.Point(199, 109);
 			this.panel9.Name = "panel9";
-			this.panel9.Size = new System.Drawing.Size(352, 92);
-			this.panel9.TabIndex = 34;
-			// 
-			// remember
-			// 
-			this.remember.AutoSize = true;
-			this.remember.Location = new System.Drawing.Point(6, 69);
-			this.remember.Name = "remember";
-			this.remember.Size = new System.Drawing.Size(133, 24);
-			this.remember.TabIndex = 3;
-			this.remember.Text = "Remember me";
-			this.remember.UseVisualStyleBackColor = true;
+			this.panel9.Size = new System.Drawing.Size(352, 80);
+			this.panel9.TabIndex = 3;
 			// 
 			// pass_txt
 			// 
 			this.pass_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.pass_txt.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::InstaPy.Properties.Settings.Default, "password", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
 			this.pass_txt.Location = new System.Drawing.Point(91, 43);
 			this.pass_txt.Name = "pass_txt";
 			this.pass_txt.PasswordChar = '*';
 			this.pass_txt.Size = new System.Drawing.Size(248, 26);
-			this.pass_txt.TabIndex = 2;
+			this.pass_txt.TabIndex = 3;
+			this.pass_txt.Text = global::InstaPy.Properties.Settings.Default.password;
 			// 
 			// username_txt
 			// 
 			this.username_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.username_txt.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::InstaPy.Properties.Settings.Default, "username", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
 			this.username_txt.Location = new System.Drawing.Point(91, 10);
 			this.username_txt.Name = "username_txt";
 			this.username_txt.Size = new System.Drawing.Size(248, 26);
-			this.username_txt.TabIndex = 2;
+			this.username_txt.TabIndex = 1;
+			this.username_txt.Text = global::InstaPy.Properties.Settings.Default.username;
 			// 
 			// label7
 			// 
@@ -789,7 +769,7 @@
 			this.label7.Location = new System.Drawing.Point(4, 46);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(78, 20);
-			this.label7.TabIndex = 1;
+			this.label7.TabIndex = 2;
 			this.label7.Text = "Password";
 			// 
 			// label6
@@ -810,7 +790,7 @@
 			this.panel10.Location = new System.Drawing.Point(12, 243);
 			this.panel10.Name = "panel10";
 			this.panel10.Size = new System.Drawing.Size(385, 40);
-			this.panel10.TabIndex = 35;
+			this.panel10.TabIndex = 6;
 			// 
 			// restrlikesusers
 			// 
@@ -866,7 +846,7 @@
 			this.panel11.Location = new System.Drawing.Point(12, 765);
 			this.panel11.Name = "panel11";
 			this.panel11.Size = new System.Drawing.Size(776, 67);
-			this.panel11.TabIndex = 37;
+			this.panel11.TabIndex = 17;
 			// 
 			// likefromimagephoto
 			// 
@@ -952,7 +932,7 @@
 			this.panel12.Location = new System.Drawing.Point(403, 401);
 			this.panel12.Name = "panel12";
 			this.panel12.Size = new System.Drawing.Size(385, 67);
-			this.panel12.TabIndex = 38;
+			this.panel12.TabIndex = 12;
 			// 
 			// label11
 			// 
@@ -995,7 +975,7 @@
 			this.panel13.Location = new System.Drawing.Point(12, 838);
 			this.panel13.Name = "panel13";
 			this.panel13.Size = new System.Drawing.Size(776, 72);
-			this.panel13.TabIndex = 39;
+			this.panel13.TabIndex = 18;
 			// 
 			// button1
 			// 
@@ -1080,7 +1060,7 @@
 			this.panel14.Location = new System.Drawing.Point(12, 474);
 			this.panel14.Name = "panel14";
 			this.panel14.Size = new System.Drawing.Size(385, 134);
-			this.panel14.TabIndex = 40;
+			this.panel14.TabIndex = 13;
 			// 
 			// fsef_int
 			// 
@@ -1191,7 +1171,7 @@
 			this.panel15.Location = new System.Drawing.Point(403, 474);
 			this.panel15.Name = "panel15";
 			this.panel15.Size = new System.Drawing.Size(385, 134);
-			this.panel15.TabIndex = 41;
+			this.panel15.TabIndex = 14;
 			// 
 			// fusef_delay
 			// 
@@ -1290,7 +1270,7 @@
 			this.panel16.Location = new System.Drawing.Point(12, 614);
 			this.panel16.Name = "panel16";
 			this.panel16.Size = new System.Drawing.Size(776, 69);
-			this.panel16.TabIndex = 42;
+			this.panel16.TabIndex = 15;
 			// 
 			// fi_per
 			// 
@@ -1360,13 +1340,39 @@
 			this.fi_ch.UseVisualStyleBackColor = true;
 			this.fi_ch.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_2);
 			// 
+			// toolStripSeparator1
+			// 
+			this.toolStripSeparator1.Name = "toolStripSeparator1";
+			this.toolStripSeparator1.Size = new System.Drawing.Size(201, 6);
+			// 
+			// exitToolStripMenuItem
+			// 
+			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+			this.exitToolStripMenuItem.Text = "Exit";
+			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(201, 6);
+			// 
+			// dontShowReadmeToolStripMenuItem1
+			// 
+			this.dontShowReadmeToolStripMenuItem1.Checked = global::InstaPy.Properties.Settings.Default.readmedontshow;
+			this.dontShowReadmeToolStripMenuItem1.CheckOnClick = true;
+			this.dontShowReadmeToolStripMenuItem1.Name = "dontShowReadmeToolStripMenuItem1";
+			this.dontShowReadmeToolStripMenuItem1.Size = new System.Drawing.Size(204, 22);
+			this.dontShowReadmeToolStripMenuItem1.Text = "Don\'t show readme";
+			this.dontShowReadmeToolStripMenuItem1.CheckedChanged += new System.EventHandler(this.toggleReadmeToolStripMenuItem1_CheckedChanged);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoScroll = true;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(816, 668);
+			this.ClientSize = new System.Drawing.Size(833, 668);
 			this.Controls.Add(this.panel16);
 			this.Controls.Add(this.panel15);
 			this.Controls.Add(this.panel14);
@@ -1397,6 +1403,7 @@
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "InstaPy GUI";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
@@ -1504,7 +1511,6 @@
 		private System.Windows.Forms.Panel panel10;
 		private System.Windows.Forms.TextBox restrlikesusers;
 		private System.Windows.Forms.CheckBox restrictlikesusers;
-		private System.Windows.Forms.CheckBox remember;
 		private System.Windows.Forms.Label missing;
 		private System.Windows.Forms.CheckBox likefromtags;
 		private System.Windows.Forms.Panel panel11;
@@ -1524,7 +1530,6 @@
 		private System.Windows.Forms.TextBox list_txt;
 		private System.Windows.Forms.CheckBox followfromlist;
 		private System.Windows.Forms.CheckBox emojisupport;
-		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteCredentialsToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem dontShowReadmeToolStripMenuItem1;
@@ -1563,6 +1568,9 @@
         private System.Windows.Forms.NumericUpDown fi_amount;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.CheckBox fsef_int;
-    }
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+	}
 }
 
