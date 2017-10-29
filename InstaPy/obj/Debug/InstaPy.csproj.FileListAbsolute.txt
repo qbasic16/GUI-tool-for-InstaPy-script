@@ -19,3 +19,14 @@ C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-scri
 C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.exe
 C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\obj\Debug\InstaPy.pdb
 C:\Users\Nemanja\Documents\Visual Studio 2017\Projects\GUI-tool-for-InstaPy-script-master\InstaPy\bin\Debug\MaterialSkin.dll
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\bin\Debug\InstaPy.exe.config
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\bin\Debug\InstaPy.exe
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\bin\Debug\InstaPy.pdb
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\obj\Debug\InstaPy.csprojResolveAssemblyReference.cache
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\obj\Debug\InstaPy.About.resources
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\obj\Debug\InstaPy.Form1.resources
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\obj\Debug\InstaPy.Properties.Resources.resources
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\obj\Debug\InstaPy.csproj.GenerateResource.Cache
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\obj\Debug\InstaPy.csproj.CoreCompileInputs.cache
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\obj\Debug\InstaPy.exe
+C:\Users\Peter\Source\Repos\GUI-tool-for-InstaPy-script\InstaPy\obj\Debug\InstaPy.pdb

@@ -24,7 +24,7 @@ namespace InstaPy
 		private void Form1_Load(object sender, EventArgs e)
 		{
             
-            this.SetAutoScrollMargin(0,60);
+            SetAutoScrollMargin(0,60);
             
 			string path = Directory.GetCurrentDirectory() +@"\instapy";
 			
@@ -61,9 +61,8 @@ namespace InstaPy
 				missing.ForeColor = System.Drawing.Color.Red;
 			}
 			
-			
 			// Shows intro message to read all info / usage of the program
-			if (Properties.Settings.Default.readmedont)
+			if (!Properties.Settings.Default.readmedontshow)
 			{
 				MessageBox.Show("Please read info/usage before any program start.", "Read me", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
@@ -75,11 +74,6 @@ namespace InstaPy
 				username_txt.Text = del[0];
 				pass_txt.Text = del[1];
 			}
-		}
-		
-		private void button1_Click(object sender, EventArgs e)
-		{
-
 		}
 
 		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -521,7 +515,7 @@ namespace InstaPy
                         {
                             continue;
                         }
-                        else fusef += "'" + item + "', ";
+                        else fusef += "'" + item.Trim() + "', ";
                     }
                     fusef = fusef.Remove(fusef.Length - 2, 1) + "]";
                     fusef += ", amount = " + fusef_amoun.Value.ToString() + ",";
@@ -721,46 +715,14 @@ namespace InstaPy
 				#endregion
 			}
 		}
-
-		private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			
-		}
-
+		
 		private void infoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			System.Diagnostics.Process.Start("https://github.com/timgrossmann/InstaPy#getting-started");
 
 			
 		}
-
-		private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
-		{
-			
-		}
-
-		private void deleteLoginInfoToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			
-		}
-
-		private void dontShowReadmeInfoToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			
-			
-		}
-
-		private void downloadInstaPyToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-
-			
-		}
-
-		private void downloadChromedriverToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			
-		}
-
+		
 		private void likes_nmbr_ValueChanged(object sender, EventArgs e)
 		{
 			if(likes_nmbr.Value > 1000)
@@ -890,32 +852,7 @@ namespace InstaPy
 			}
 			else panel7.BackColor = System.Drawing.Color.LightSalmon;
 		}
-
-		private void deleteCredentialsToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			MessageBox.Show("Login info deleted.", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			Properties.Settings.Default.usernpass = "";
-			Properties.Settings.Default.Save();
-		}
-
-		private void downloadInstaPyFilesToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			using (var client = new WebClient())
-			{
-				client.DownloadFile("https://github.com/timgrossmann/InstaPy/archive/master.zip", "master.zip");
-			}
-
-
-
-			MessageBox.Show("Extract .zip file and copy InstaPy-GUI.exe and paste it inside InstaPy-master folder.", "ATTENTION", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-			this.Close();
-		}
-
-		private void downloadChromedriverToolStripMenuItem1_Click(object sender, EventArgs e)
-		{
-			
-		}
-
+		
 		private void exitToolStripMenuItem2_Click(object sender, EventArgs e)
 		{
 			this.Close();
@@ -929,20 +866,10 @@ namespace InstaPy
             Properties.Settings.Default.Save();
         }
 
-        private void dontShowReadmeToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void toggleReadmeToolStripMenuItem1_CheckedChanged(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default.readmedont)
-            {
-                Properties.Settings.Default.readmedont = false;
-                dontShowReadmeToolStripMenuItem1.Text = "Do show Readme";
-                Properties.Settings.Default.Save();
-            }
-            else
-            {
-                Properties.Settings.Default.readmedont = true;
-                dontShowReadmeToolStripMenuItem1.Text = "Don't show Readme";
-                Properties.Settings.Default.Save();
-            }
+			Properties.Settings.Default.readmedontshow = dontShowReadmeToolStripMenuItem1.Checked;
+			Properties.Settings.Default.Save();
         }
 
         private void downloadInstaPyFilesToolStripMenuItem1_Click(object sender, EventArgs e)
